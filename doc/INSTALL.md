@@ -40,10 +40,12 @@ In following commands replace `<you>` with your username.
 
 ### Prepare database
 
+1. Install the "prioritize" PostgreSQL module : `apt install postgresql-16-prioritize` (Please adapt the pgsql version)
 1. `sudo su - postgres` (skip this on MacOS)
 1. `createdb <you>`
 1. `createuser <you>`
 1. `psql <you>`
+1. `CREATE EXTENSION prioritize;`
 1. `CREATE EXTENSION postgis;`
 1. `CREATE EXTENSION postgis_topology;`
 1. `GRANT CREATE ON DATABASE <you> TO <you>;`
